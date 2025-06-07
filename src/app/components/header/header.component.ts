@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { LogoComponent } from "../logo/logo.component";
 import { Car } from "../../models/Car";
-import { prodotto } from '../../models/Prodotto';
+import { Prodotto } from '../../models/Prodotto';
 // import { ICcar } from "../../models/Car"; // se si usa interface
 
 @Component({
@@ -15,12 +15,14 @@ export class HeaderComponent {
   anno: number = 22;
   car = { nome: "Mercedes", modello: "S-Class", }
 
-  prodotto?: prodotto;
-  bici?:prodotto ={
-    id: 1,
+  prodotto?: Prodotto;
+
+  bici?:Prodotto ={
     nome: "Bicicletta",
     prezzo: 120,
-    inOfferta: false,
+    desc: "test",
+    foto:""
+  
   }
 
   /* esempio() {
@@ -39,10 +41,11 @@ export class HeaderComponent {
 
   esempio() {
     this.prodotto = {
-      id: 1,
+      desc:"Test",
+      foto:"", 
       nome: "Bicicletta",
       prezzo: 120,
-      inOfferta: false,
+     
     };
 
     let eta = 16;

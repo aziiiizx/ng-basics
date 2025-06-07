@@ -1,11 +1,36 @@
-<app-header></app-header>
+<!--<app-header></app-header>-->
 <div class="container">
-<h1>Ciao!</h1>
+<app-title testo="Prodotti" ></app-title>
 <h3>Novità </h3>
-<app-lista-prodotti></app-lista-prodotti>
+<app-lista-prodotti 
+titolo="novita" 
+[prodotti]="prodotti_novita"
+></app-lista-prodotti>
 <hr>
 <h3>Suggerimenti. </h3> 
-<app-lista-prodotti></app-lista-prodotti>
+<app-lista-prodotti 
+titolo="Suggerimenti" 
+[prodotti]="prodotti_suggerrimenti"
+></app-lista-prodotti>
+<hr>
+
+<app-title testo="Blog"></app-title>
+<p>
+ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit minima itaque, autem laboriosam natus accusantium,
+  aliquid at suscipit esse placeat quae sapiente hic voluptates voluptatum voluptatem expedita vero fugiat accusamus voluptas
+   velit aut et. Tempora sequi harum eveniet itaque sunt magnam praesentium repudiandae! Tenetur reprehenderit, quam sapiente
+    eaque corrupti beatae et, quo ducimus consequatur praesentium dolorum quidem blanditiis suscipit ad expedita harum omnis
+     aperiam similique cumque id voluptatem magni. Id fugiat sunt, aliquid, corporis eligendi saepe mollitia, tempora eum
+      molestias consequuntur sequi aliquam? Eligendi delectus eveniet possimus, aliquid autem vitae consequatur, adipisci
+       accusantium labore reiciendis officia? Odio praesentium pariatur repellat deserunt corrupti eum provident assumenda et
+        porro architecto aspernatur earum error facilis magni fuga atque quam, nisi reiciendis. Hic quaerat sunt quisquam natus 
+        nihil! Quae rerum consectetur, hic enim accusamus libero voluptatem et minima. Vitae, modi. Molestias vel delectus assumenda
+         minima aliquam vitae praesentium corporis aliquid debitis quasi dolorem expedita voluptatem velit repellendus aperiam, neque 
+         impedit distinctio rem ratione? A deleniti omnis fugiat exercitationem nemo quod quasi, in tenetur laborum. Explicabo ipsam eos 
+         repellendus error excepturi perspiciatis provident cum? Blanditiis labore dolor deleniti corporis. Repudiandae quas cum iure accusantium
+          earum et quo sequi laborum voluptas. Corrupti laborum labore ad.
+
+</p>
 </div>
   <app-footer></app-footer>
 <router-outlet />
